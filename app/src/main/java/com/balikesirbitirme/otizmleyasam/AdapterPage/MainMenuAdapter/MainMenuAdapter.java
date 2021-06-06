@@ -16,7 +16,13 @@ import com.balikesirbitirme.otizmleyasam.Gamepage.MathGamePage.MathGameActivity;
 import com.balikesirbitirme.otizmleyasam.Gamepage.MathGamePage.MathGameActivity2;
 import com.balikesirbitirme.otizmleyasam.Gamepage.MimicPage.MimicActivity;
 import com.balikesirbitirme.otizmleyasam.Gamepage.MoveGamePage.MoveGameActivity;
+import com.balikesirbitirme.otizmleyasam.Gamepage.PuzzleGamePage.PuzzleGameActivity;
+import com.balikesirbitirme.otizmleyasam.Gamepage.SoundObjectPage.SoundObjectActivity;
 import com.balikesirbitirme.otizmleyasam.Gamepage.StoryPage.StoryMenuActivity;
+import com.balikesirbitirme.otizmleyasam.Gamepage.ToDoListPage.EbeveynMainList;
+import com.balikesirbitirme.otizmleyasam.Gamepage.WorldLearn.WordSecondActivity;
+import com.balikesirbitirme.otizmleyasam.Gamepage.WorldLearn.WorldActivity;
+import com.balikesirbitirme.otizmleyasam.Gamepage.WorldLearn.WorldMenuActivity;
 import com.balikesirbitirme.otizmleyasam.R;
 import com.balikesirbitirme.otizmleyasam.mainpage.MainActivity;
 import com.balikesirbitirme.otizmleyasam.mainpage.MathActivity;
@@ -116,7 +122,7 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.ViewHo
         Intent intent = null;
         switch(position){
             case 0:
-                 intent= new Intent(context,MainActivity.class);
+                 intent= new Intent(context, EbeveynMainList.class);//ebeveyn kısmı ile ilgisi yok kaza ile o isim verildi değiştirilmeye gerek görülmedi
                 break;
             case 1:
                 intent= new Intent(context, MathActivity.class);
@@ -131,19 +137,20 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.ViewHo
                 intent= new Intent(context, PairingActivity.class);
                 break;
             case 5:
-                intent= new Intent(context,MainActivity.class);//tasarlanmadı
-                break;
+               // intent= new Intent(context, WorldActivity.class);//tasarlanmadı
+                intent= new Intent(context, WorldMenuActivity.class);//tasarlanmadı
+                break;/**
             case 6:
                 intent= new Intent(context,MainActivity.class);//tasarlanmadı
-                break;
-            case 7:
+                break;**/
+            case 6:
                 intent= new Intent(context, MoveGameActivity.class);
                 break;
-            case 8:
-                intent= new Intent(context,MainActivity.class);
+            case 7:
+                intent= new Intent(context, PuzzleGameActivity.class);
                 break;
-            case 9:
-                intent= new Intent(context,MainActivity.class);
+            case 8:
+                intent= new Intent(context, SoundObjectActivity.class);
                 break;
 
         }

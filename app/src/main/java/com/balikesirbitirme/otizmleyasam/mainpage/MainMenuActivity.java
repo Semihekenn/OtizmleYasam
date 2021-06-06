@@ -53,14 +53,15 @@ public class MainMenuActivity extends AppCompatActivity {
 
         menuRows.add(new MenuRow(context.getString(R.string.strMenu1),R.drawable.main_menu_cizerge1));
         menuRows.add(new MenuRow(context.getString(R.string.strMenu2),R.drawable.main_menu_math2));
-        menuRows.add(new MenuRow(context.getString(R.string.strMenu3),R.drawable.main_menu_mimik3));
+        menuRows.add(new MenuRow(context.getString(R.string.strMenu3),R.drawable.pandomim));
         menuRows.add(new MenuRow(context.getString(R.string.strMenu4),R.drawable.main_menu_hikaye4));
         menuRows.add(new MenuRow(context.getString(R.string.strMenu5),R.drawable.main_menu_esleme5));
         menuRows.add(new MenuRow(context.getString(R.string.strMenu6),R.drawable.main_menu_harfkelime6));
-        menuRows.add(new MenuRow(context.getString(R.string.strMenu7),R.drawable.main_menu_tane7));
+        //menuRows.add(new MenuRow(context.getString(R.string.strMenu7),R.drawable.main_menu_tane7));
         menuRows.add(new MenuRow(context.getString(R.string.strMenu8),R.drawable.main_menu_fiiller8));
-        menuRows.add(new MenuRow(context.getString(R.string.strMenu9),R.drawable.main_menu_yapboz9));
-        menuRows.add(new MenuRow(context.getString(R.string.strMenu10),R.drawable.main_menu_cizerge1));
+        menuRows.add(new MenuRow(context.getString(R.string.strMenu9),R.drawable.puzzle_new2));
+        menuRows.add(new MenuRow(context.getString(R.string.strMenu10),R.drawable.sound_object_new2));
+
 
     }
 

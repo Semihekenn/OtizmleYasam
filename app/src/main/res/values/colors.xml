@@ -3,10 +3,14 @@
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorBackgroundRed">#AEE6E1</color>
+    <color name="colorBackgroundRed">#F8EFBA</color>
     <color name="colorTextMain">#E16060</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
     <color name="colorMathMainLyt">#ff4d1c</color>
+    <color name="colorLytStoryBackground">#fab1a0</color>
+    <color name="colorButtonPlusBack">#fc4e03</color>
+    <color name="colorButtonPlusBorder">#fc4103</color>
+
 
 </resources>

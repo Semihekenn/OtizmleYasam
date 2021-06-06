@@ -4,58 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Gamepage.PairingGamePage.PairingActivity"
-    android:background="@color/colorBackgroundRed">
+    android:background="@color/colorBackgroundRed"
 
-    <ImageView
-        android:id="@+id/img_pairing_main"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="16dp"
+    tools:context=".Gamepage.PairingGamePage.PairingActivity">
+
+    <Button
+        android:id="@+id/btn_esleme_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custon_plus_button"
+        android:text=" +"
+        android:textColor="@drawable/color_text_plus_button"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
-        android:background="@color/colorMathMainLyt"
-        android:layout_width="150dp"
-        android:layout_height="match_parent"
-        android:layout_marginEnd="32dp"
+        android:id="@+id/lnlLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/img_pairing_selecter1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="30dp"
-            ></ImageView>
-        <ImageView
-            android:id="@+id/img_pairing_selecter2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="30dp"
-            ></ImageView>
-        <ImageView
-            android:id="@+id/img_pairing_selecter3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="30dp"
-            ></ImageView>
-        <ImageView
-            android:id="@+id/img_pairing_selecter4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            ></ImageView>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/lnlRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
